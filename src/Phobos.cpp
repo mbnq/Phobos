@@ -9,7 +9,7 @@
 #include "Utilities/AresHelper.h"
 
 #ifndef IS_RELEASE_VER
-bool HideWarning = false;
+bool HideWarning = true;
 #endif
 
 HANDLE Phobos::hInstance = 0;
@@ -24,9 +24,9 @@ bool Phobos::DisplayDamageNumbers = false;
 bool Phobos::IsLoadingSaveGame = false;
 
 #ifdef STR_GIT_COMMIT
-const wchar_t* Phobos::VersionDescription = L"Phobos nightly build (" STR_GIT_COMMIT L" @ " STR_GIT_BRANCH L"). DO NOT SHIP IN MODS!";
+const wchar_t* Phobos::VersionDescription = L"YOU PROGRAMMERS ARE REALLY BAD AT EXPLAINING THINGS";
 #elif !defined(IS_RELEASE_VER)
-const wchar_t* Phobos::VersionDescription = L"Phobos development build #" _STR(BUILD_NUMBER) L". Please test the build before shipping.";
+const wchar_t* Phobos::VersionDescription = L"YOU PROGRAMMERS ARE REALLY BAD AT EXPLAINING THINGS";
 #else
 //const wchar_t* Phobos::VersionDescription = L"Phobos release build v" FILE_VERSION_STR L".";
 #endif
